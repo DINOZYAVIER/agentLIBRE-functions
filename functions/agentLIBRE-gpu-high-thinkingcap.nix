@@ -7,6 +7,7 @@
 # the 128K of context and the q8 KV cache.
 { agl, ... }:
 {
+  description = "for a GPU with 24 GB of VRAM: Qwen3.8 27B ThinkingCap, 128K of context, the vision projector on the GPU";
   policy = agl.policies.agentLIBRE;
   model = agl.models."qwen3.8-27b-thinkingcap-iq4_xs" // {
     mmproj_offload = true;

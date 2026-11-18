@@ -4,6 +4,7 @@
 # card holds it with the whole model at 128K of context.
 { agl, ... }:
 {
+  description = "for a GPU with 24 GB of VRAM: Qwen3.8 27B, 128K of context, the vision projector on the GPU";
   policy = agl.policies.agentLIBRE;
   model = agl.models."qwen3.8-27b-iq4_xs" // {
     mmproj_offload = true;

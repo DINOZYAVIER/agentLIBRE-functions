@@ -3,6 +3,7 @@
 # on the CPU, for 1.24 GB more (AGL-051).
 { agl, ... }:
 {
+  description = "for a GPU with 8 GB of VRAM and more: Gemma 4 E4B, the vision projector on the GPU";
   policy = agl.policies.agentLIBRE;
   model = agl.models."gemma-4-e4b-qat" // {
     mmproj_offload = true;

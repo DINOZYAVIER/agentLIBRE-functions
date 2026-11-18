@@ -4,6 +4,7 @@
 # the usual batch the VRAM is so full that it runs three times slower.
 { agl, ... }:
 {
+  description = "for a GPU with 24 GB of VRAM and little else on it: Qwen3.8 27B, all its 256K of context";
   policy = agl.policies.agentLIBRE;
   model = agl.models."qwen3.8-27b-iq4_xs" // {
     context = 262144;
